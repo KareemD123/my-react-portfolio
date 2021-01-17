@@ -9,20 +9,31 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Courses from './components/Courses';
 import {Route} from 'react-router-dom';
-
+import {ProductConsumer, ProductProvider} from './Context/Context';
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    
+      <ProductConsumer>
+        {value=>{
+          return(
+          <div className="App">
+          <Navbar />
 
-      <Route exact path ="/" component = {Header} />
-      <Route exact path ="/" component = {About} />
-      <Route exact path ="/" component = {Skills} />
-      <Route exact path ="/" component = {Projects} />
-      <Route exact path ="/" component = {Contact} />
-    </div>
+                {/* <Route exact path ="/" component = {Header} />
+                <Route exact path ="/" component = {About} />
+                <Route exact path ="/" component = {Skills} />
+                <Route exact path ="/" component = {Projects} />
+                <Route exact path ="/" component = {Contact} /> */}
+                
+
+          </div>
+          )
+        }}
+      </ProductConsumer>
+      
+    
   );
 }
 
