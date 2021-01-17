@@ -22,8 +22,8 @@ function App() {
           <Navbar />
 
                 <Route exact path ="/" component = {Header} />
-                {/*<Route exact path ="/" component = {About} />
-                <Route exact path ="/" component = {Skills} />
+                <Route exact path ="/" component = {About} />
+                {/*<Route exact path ="/" component = {Skills} />
                 <Route exact path ="/" component = {Projects} />
                 <Route exact path ="/" component = {Contact} /> */}
                 

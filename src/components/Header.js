@@ -15,7 +15,7 @@ export default function Header() {
                   Hello I am Kareem!
                 </h1>
                 <h2>
-                  Petroleum Engineer, Full-Stack Web Developer, and Data Scientist
+                  Petroleum Engineer, Full-Stack Web Developer, and aspiring Data Scientist
                 </h2>
                 <a href="mailto:draz@ualberta.ca" className="contactBtn">Contact</a>
               </div>
