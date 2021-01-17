@@ -16,6 +16,7 @@ export default function About() {
                 <div className="about-logo">
                   <img src={AboutLogo} alt="logo"/>
                 </div>
+
                 <div className="about-texts">
                   <div className="profile">
                     <h2>My Profile</h2>
@@ -40,15 +41,28 @@ export default function About() {
                     <p><span>Website: </span>www.KareemDraz.com</p>
                   </div>
                   <div className="about-media">
-                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
+                    <a href="www.google.ca" target="_blank" rel="noopener noreeferrer"><i className="fab fa-github-square"></i></a>
 
-                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
+                    <a href="www.google.ca" target="_blank" rel="noopener noreeferrer"><i className="fab fa-github-square"></i></a>
 
-                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                    <a href="www.google.ca" target="_blank" rel="noopener noreeferrer"><i className="fab fa-linkedin"></i></a>
                   </div>
 
                 </div>
               </div>
+
+            <div className="generally">
+              <span> 
+                Generally, 
+              </span><p>I graduated from the University of Alberta with a Bachelor's degree in Petroleum Engineering. I am an aspiring Data Scientist in the Oil and Gas field. I am also aFull Stack Web Developer. Below you can see my skills and projects.</p>
+              <div className="certificates">
+                <h4>My Certificates: </h4>
+                <p>Bachelors Degree in Petroleum Engineering</p>
+                <p>General Assembly Software Engineering Immersive</p>
+                <p>Coursera Applied Data Sciences</p>
+              </div>
+            </div>
+
             </div>
           </section>
         )

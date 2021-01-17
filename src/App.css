@@ -268,6 +268,137 @@ a {
 /* end of header */
 
 
+/* about */
+
+.about{
+  padding: 50px 50px;
+  line-height: 1.6;
+
+}
+
+.about-logo{
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.about-logo img{
+  width:100%;
+  height: 420px;
+}
+
+.about-texts span{
+  font-weight: bold;
+}
+
+.about-texts div{
+ border-bottom: 1px solid grey;
+ padding: 10px;
+
+}
+
+.about-texts, .about-media{
+  border-bottom: 0px solid grey;
+
+}
+
+.about-media{
+  display:flex;
+  justify-content: space-evenly;
+  background: rgb(28,130,231);
+
+}
+
+.profile h2{
+  letter-spacing: 0.2rem;
+
+}
+
+.about-media a{
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px;
+  font-size: 18px;
+  color: rgb(218,216,216);
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition:  all 0.5s ease-in-out;
+
+}
+
+.about-media a:hover{
+  color: rgb(197,194,194);
+  background: rgb(10,78,146);
+  color:#fff;
+  border: 1px solid #fff;
+}
+
+.generally{
+  margin-top: 20px;
+
+}
+
+.generally span{
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 20px;
+  color: rgb(28,130,231);
+  font-weight:bold;
+
+}
+
+.certificates{
+  margin-top: 10px;
+
+}
+
+.certificates p{
+  padding-left: 20px;
+  
+}
 
 
+/*responsive */
 
+@media screen and (min-weidth: 664px){
+  .about-center{
+    display:flex;
+    justify-content:center;
+
+  }
+
+  .header img{
+    height: 75vh;
+  }
+
+  .about-logo{
+    align-self: center;
+    flex: 0 0 35%;
+    margin-bottom:0;
+    margin:5px;
+    height:300px;
+    box-shadow: 0 0 5px 1px grey;
+    padding: 5px;
+
+  }
+
+  .about-logo img{
+    height: 300px;
+    display: block;
+  }
+
+  .about-texts{
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+
+}
+
+
+@media screen and (min-width:886px){
+  .about-logo{
+    align-self:center;
+    flex: 0 0 300px;
+    margin-bottom: 0 10px;
+    height: 300px;
+  }
+} 
