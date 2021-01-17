@@ -17,7 +17,7 @@ export default function Header() {
                 <h2>
                   Petroleum Engineer, Full-Stack Web Developer, and Data Scientist
                 </h2>
-                <a href="mailto:draz@ualberta.ca">Contact Me</a>
+                <a href="mailto:draz@ualberta.ca" className="contactBtn">Contact</a>
               </div>
             </div>
 
@@ -25,6 +25,8 @@ export default function Header() {
           <div className="btnMode">
             <div className="btnIcons">
               <i className="fas fa-moon"></i>
+              <div className="ball"></div>
+              <i className="fas fa-sun"></i>
             </div>
           </div>
 
