@@ -9,21 +9,25 @@ export default function Navbar() {
   return (
     <ProductConsumer>
       {(value) => {
+
+        const {handleSidebar, sidebarOpen, handleClose} = value;
+
+
         return (
-        <NavWrapper>
+        <NavWrapper show={sidebarOpen}>
           <div className="header-container">
             <nav>
               <div className="logoBtn">
-                <Link to='/'>
+                <Link to='/' onClick={handleClose}>
                 <img src={logo} alt='image'/>
                 </Link>
-                <div className='btn'>
+                <div className='btn' onClick={handleSidebar} >
                   <div className='bar'></div>
                   <div className='bar'></div>
                   <div className='bar'></div>
                 </div>
               </div>
-              <ul className='links'>
+              <ul className='links' onClick={handleClose}>
                 {value.links.map(links=>{
                   return(
                     <li key={links.id}>
@@ -96,7 +100,7 @@ opacity:1;
   right:0;
   background:rgba(0,0,0,0.9);
   width:400px;
-  transform:translate(0%);
+  transform:${props=>props.show?"translate(%)":"translate(-100%)"};
 }
 
 .links li a {
@@ -156,7 +160,7 @@ opacity:1;
     align-items:center;
     width:auto;
     background: transparent;
-    transform: translate(0%);
+    transform: ${props=>props.show?"translate(0%)":"translate(0%)"};
   }
 
   .links li a{

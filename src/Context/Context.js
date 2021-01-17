@@ -14,7 +14,7 @@ class ProductProvider extends Component {
 
 
       state={
-        // sidebarOpen:false,
+        sidebarOpen:false,
         // closeLinks:false,
         links:Links,
         // headerShow:false,
@@ -25,12 +25,35 @@ class ProductProvider extends Component {
         // backMode:false,
         // setClass:JSON.parse(localStorage.getItem("Mode"))
       }
+
+// open -close sidebar
+handleSidebar=()=>{
+  console.log('you pushed handleSidebar');
+  this.setState({
+    sidebarOpen:!this.state.sidebarOpen,
+  })
+}
+
+// close sidebar if is open
+handleClose=()=>{
+  console.log('you closed handleclose');
+  if(this.state.sidebarOpen===true){
+    this.setState({
+      sidebarOpen:false
+    })
+  }
+}
+
+
+
+
   render() {
     return(
       <ProductContext.Provider value={{
         
           ...this.state,
-          
+          handleSidebar:this.handleSidebar,
+          handleClose: this.handleClose,
 
       }}>
         {this.props.children}
@@ -38,6 +61,10 @@ class ProductProvider extends Component {
       </ProductContext.Provider>
     )
   }
+
+
+
+
 }
 
 const ProductConsumer = ProductContext.Consumer;
