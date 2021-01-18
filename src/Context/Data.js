@@ -26,12 +26,12 @@ export const Links=[
     path:"/projects",
     scrolling: "Projects",
   },
-  {
-    id:5,
-    link:"Courses",
-    path:"/courses",
-    scrolling: "Courses",
-  },
+  // {
+  //   id:5,
+  //   link:"Courses",
+  //   path:"/courses",
+  //   scrolling: "Courses",
+  // },
   {
     id:6,
     link:"Contact",
@@ -149,13 +149,13 @@ export const projects=[
   },
 ]
 
-export const courses=[
-  {
-    id:1,
-    iframe:"https://www.google.ca",
-    title:'test course 1',
-  }
-]
+// export const courses=[
+//   {
+//     id:1,
+//     iframe:"https://www.google.ca",
+//     title:'test course 1',
+//   }
+// ]
 
 
 

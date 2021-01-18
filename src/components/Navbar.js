@@ -7,6 +7,17 @@ import { scroller } from "react-scroll";
 import { ProductConsumer } from "../Context/Context";
 
 export default function Navbar() {
+
+
+  const scrollToElement=(element)=>{
+    scroller.scrollTo(element, {
+      duration:1500,
+      delay:100,
+      smooth:true,
+      offset:-80,
+    })
+  }
+
   return (
     <ProductConsumer>
       {(value) => {
@@ -20,7 +31,7 @@ export default function Navbar() {
             <nav>
               <div className="logoBtn">
                 <Link to='/' onClick={handleClose}>
-                {/* <img src={logo} alt='image'/> */}
+                {/* <img src={logo} onClick={()=>scrollToElement("Home")} alt='image'/> */}
                 </Link>
                 <div className='btn' onClick={handleSidebar} >
                   <div className='bar'></div>
@@ -32,7 +43,7 @@ export default function Navbar() {
                 {value.links.map(links=>{
                   return(
                     <li key={links.id}>
-                      <Link to="/">{links.link}</Link>
+                      <Link to="/" onClick={()=>scrollToElement(links.scrolling)}>{links.link}</Link>
                     </li>
                   )
                 })}
@@ -53,7 +64,7 @@ top:0 !important;
 z-index:6;
 background: ${props => props.posit ? "rgba(0,0,0,0.7)":"#666666"};
 transition:all 0.5s ease-in-out;
-opacity:1;
+opacity:${props => props.posit ? "1":"0.9"};
 
 .logoBtn img{
   display:block;

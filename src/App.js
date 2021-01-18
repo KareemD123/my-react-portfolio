@@ -18,16 +18,35 @@ function App() {
       <ProductConsumer>
         {value=>{
           return(
+
           <div className="App">
+
           <Navbar />
 
-                <Route exact path ="/" component = {Header} />
-                <Route exact path ="/" component = {About} />
-                <Route exact path ="/" component = {Skills} />
-                <Route exact path ="/" component = {Projects} />
-                <Route exact path ="/" component = {Contact} />
-                
+            <Element name="Home">
+            <Route exact path ="/" component = {Header} />
+            </Element>
 
+            <div className="basic">
+
+                <Element name="About">
+              <Route exact path ="/" component = {About} />
+            </Element>
+
+            <Element name="Skills">
+              <Route exact path ="/" component = {Skills} />
+            </Element>
+
+            <Element name="Projects">
+               <Route exact path ="/" component = {Projects} />
+            </Element>
+
+            </div>         
+
+            <Element name="Contact">
+              <Route exact path ="/" component = {Contact} />
+            </Element>
+                
           </div>
           )
         }}

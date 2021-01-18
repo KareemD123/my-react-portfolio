@@ -4,7 +4,7 @@ import {Links} from './Data';
 import {devSkills} from './Data';
 import {petroleumSkills} from './Data';
 import {projects} from './Data';
-import {courses} from './Data';
+// import {courses} from './Data';
 import {datascienceSkills} from'./Data';
 
 
@@ -23,7 +23,7 @@ class ProductProvider extends Component {
         datascienceSkills:datascienceSkills,
         petroleumSkills:petroleumSkills,
         projects:projects,
-        courses:courses,
+        // courses:courses,
         // backMode:false,
         // setClass:JSON.parse(localStorage.getItem("Mode"))
       }

@@ -2,8 +2,23 @@ import React from 'react';
 import Title from './Title';
 import {ProductConsumer} from '../Context/Context';
 import {Link} from 'react-router-dom';
+import {scroller} from 'react-scroll';
 
 export default function Contact() {
+
+
+
+  const scrollToElement=(element)=>{
+    scroller.scrollTo(element, {
+      duration:1500,
+      delay:100,
+      smooth:true,
+      offset:-80,
+    })
+  } 
+
+
+
   return (
     <ProductConsumer>
       {value=>{
@@ -19,7 +34,7 @@ export default function Contact() {
                       {value.links.map(item=>{
                         return(
                           <li key={item.id}>
-                            <Link to="/">{item.link}</Link>
+                            <Link to="/" onClick={()=>scrollToElement(item.scrolling)} >{item.link}</Link>
                           </li>
                         )
                       })}
