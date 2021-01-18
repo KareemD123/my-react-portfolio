@@ -33,6 +33,17 @@ export default function Skills() {
                 })}
                 </div>
 
+                <div className="skills-datascience">
+                <h4>Data Science Skills</h4>
+                {value.datascienceSkills.map(skills=>{
+                  return(
+                    <li>
+                      <h3>{skills.title}</h3>
+                    </li>
+                  )
+                })}
+                </div>
+
 
               </div>
             </div>

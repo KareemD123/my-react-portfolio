@@ -98,6 +98,21 @@ export const petroleumSkills=[
   },
 ]
 
+export const datascienceSkills=[
+  {
+    id:1,
+    title: "Python",
+    percent: 'one hundred',
+    number:'100%'
+  },
+  {
+    id:2,
+    title: "PyCharm/Anaconda",
+    percent: 'one hundred',
+    number:'100%'
+  },
+]
+
 
 export const projects=[
   {

@@ -41,11 +41,11 @@ export default function About() {
                     <p><span>Website: </span>www.KareemDraz.com</p>
                   </div>
                   <div className="about-media">
-                    <a href="www.google.ca" target="_blank" rel="noopener noreeferrer"><i className="fab fa-github-square"></i></a>
+                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
 
-                    <a href="www.google.ca" target="_blank" rel="noopener noreeferrer"><i className="fab fa-github-square"></i></a>
+                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
 
-                    <a href="www.google.ca" target="_blank" rel="noopener noreeferrer"><i className="fab fa-linkedin"></i></a>
+                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                   </div>
 
                 </div>
