@@ -103,11 +103,35 @@ export const projects=[
   {
     id:1,
     extlink: 'https://github.com/KareemD123/wordify',
-    img:"/images/wordify.JPG",
+    img:"../images/wordify.JPG",
     title:'Wordify - React Project',
     btnTitle: 'Wordify',
 
-  }
+  },
+  {
+    id:2,
+    extlink: 'https://github.com/KareemD123/wordify',
+    img:"../images/wordify.JPG",
+    title:'Wordify - React Project',
+    btnTitle: 'Wordify',
+
+  },
+  {
+    id:3,
+    extlink: 'https://github.com/KareemD123/wordify',
+    img:"../images/wordify.JPG",
+    title:'Wordify - React Project',
+    btnTitle: 'Wordify',
+
+  },
+  {
+    id:4,
+    extlink: 'https://github.com/KareemD123/wordify',
+    img:"../images/wordify.JPG",
+    title:'Wordify - React Project',
+    btnTitle: 'Wordify',
+
+  },
 ]
 
 export const courses=[
