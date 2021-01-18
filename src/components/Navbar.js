@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from "../logo.svg";
+// import logo from "../logo.svg";
+import logo from "../images/wordify.JPG"
 import { scroller } from "react-scroll";
 import { ProductConsumer } from "../Context/Context";
 
@@ -10,16 +11,16 @@ export default function Navbar() {
     <ProductConsumer>
       {(value) => {
 
-        const {handleSidebar, sidebarOpen, handleClose} = value;
+        const {handleSidebar, sidebarOpen, handleClose, headerShow} = value;
 
 
         return (
-        <NavWrapper show={sidebarOpen}>
+        <NavWrapper show={sidebarOpen} posit={headerShow}>
           <div className="header-container">
             <nav>
               <div className="logoBtn">
                 <Link to='/' onClick={handleClose}>
-                <img src={logo} alt='image'/>
+                {/* <img src={logo} alt='image'/> */}
                 </Link>
                 <div className='btn' onClick={handleSidebar} >
                   <div className='bar'></div>
@@ -50,9 +51,10 @@ const NavWrapper = styled.div`
 position:sticky !important;
 top:0 !important;
 z-index:6;
-background: #666666;
+background: ${props => props.posit ? "rgba(0,0,0,0.7)":"#666666"};
 transition:all 0.5s ease-in-out;
 opacity:1;
+
 .logoBtn img{
   display:block;
   padding:0 0;
@@ -179,7 +181,7 @@ opacity:1;
   }
 
   .logoBtn{
-    border-botom:0;
+    border-bottom:0;
 
   }
 }

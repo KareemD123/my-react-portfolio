@@ -652,18 +652,6 @@ a {
   }
 }
 
-.created{
-  background: rgb(10,108,207);
-  box-shadow: 0 0 4px 1px lightgray;
-}
-
-.created p{
-  text-align: center;
-  padding: 10px;
-  color: lightgray;
-  font-style: italic;
-  font-size: 19px;
-}
 
 
 

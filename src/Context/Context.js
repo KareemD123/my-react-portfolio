@@ -16,9 +16,9 @@ class ProductProvider extends Component {
 
       state={
         sidebarOpen:false,
-        // closeLinks:false,
+        closeLinks:false,
         links:Links,
-        // headerShow:false,
+        headerShow:false,
         devSkills:devSkills,
         datascienceSkills:datascienceSkills,
         petroleumSkills:petroleumSkills,
@@ -44,6 +44,26 @@ handleClose=()=>{
       sidebarOpen:false
     })
   }
+}
+
+componentDidMount(){
+  window.addEventListener("scroll", this.scrollEffect)
+}
+
+// scroll effect
+
+scrollEffect=()=>{
+
+    if(window.scrollY>50){
+      this.setState({
+        headerShow:true
+      })
+    }
+    else{
+      this.setState({
+        headerShow:false
+      })
+    }
 }
 
 
