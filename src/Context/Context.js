@@ -24,8 +24,8 @@ class ProductProvider extends Component {
         petroleumSkills:petroleumSkills,
         projects:projects,
         // courses:courses,
-        // backMode:false,
-        // setClass:JSON.parse(localStorage.getItem("Mode"))
+        backMode:false,
+        setClass:JSON.parse(localStorage.getItem("Mode"))
       }
 
 // open -close sidebar
@@ -45,6 +45,17 @@ handleClose=()=>{
     })
   }
 }
+
+
+// light dark mode
+handleMode=()=>{
+  this.setState({
+    backMode: !this.state.backMode
+  })
+}
+
+
+
 
 componentDidMount(){
   window.addEventListener("scroll", this.scrollEffect)
@@ -67,6 +78,17 @@ scrollEffect=()=>{
 }
 
 
+darkMode=()=>{
+  if(JSON.parse(localStorage.getItem("Mode"))===true)
+  this.setState({setClass:false}, ()=>{
+    localStorage.setItem("Mode", JSON.stringify(false));
+  });
+  else{
+    this.setState({setClass:true}, ()=>{
+      localStorage.setItem("Mode", JSON.stringify(true));
+    });
+  }
+}
 
 
   render() {
@@ -76,6 +98,8 @@ scrollEffect=()=>{
           ...this.state,
           handleSidebar:this.handleSidebar,
           handleClose: this.handleClose,
+          handleMode: this.handleMode,
+          darkMode: this.darkMode,
 
       }}>
         {this.props.children}

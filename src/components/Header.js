@@ -6,6 +6,12 @@ export default function Header() {
   return (
     <ProductConsumer>
       {(value)=>{
+
+
+        const {setClass, darkMode} = value;
+
+
+
         return(
           <section className="header">
             <img src={headerImg} alt="header"/>
@@ -23,9 +29,9 @@ export default function Header() {
 
           {/* dark mode button */}
           <div className="btnMode">
-            <div className="btnIcons">
+            <div className={setClass?"btnIcons newBtnIcons":"btnIcons"} onClick={darkMode}>
               <i className="fas fa-moon"></i>
-              <div className="ball"></div>
+              <div className={setClass?"newBall ball":"ball"}></div>
               <i className="fas fa-sun"></i>
             </div>
           </div>

@@ -6,6 +6,7 @@ import logo from "../images/wordify.JPG"
 import { scroller } from "react-scroll";
 import { ProductConsumer } from "../Context/Context";
 
+
 export default function Navbar() {
 
 
@@ -22,11 +23,11 @@ export default function Navbar() {
     <ProductConsumer>
       {(value) => {
 
-        const {handleSidebar, sidebarOpen, handleClose, headerShow} = value;
+        const {handleSidebar, sidebarOpen, handleClose, headerShow, setClass} = value;
 
 
         return (
-        <NavWrapper show={sidebarOpen} posit={headerShow}>
+        <NavWrapper className={setClass?"dark-nav":""} show={sidebarOpen} posit={headerShow}>
           <div className="header-container">
             <nav>
               <div className="logoBtn">

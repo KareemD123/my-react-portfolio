@@ -17,9 +17,12 @@ function App() {
     
       <ProductConsumer>
         {value=>{
+
+          const {setClass}=value;
+
           return(
 
-          <div className="App">
+          <div className={setClass?"dark-mode-black":"App"}>
 
           <Navbar />
 

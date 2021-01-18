@@ -8,39 +8,42 @@ export default function About() {
   return (
     <ProductConsumer>
       {value=>{
+
+        const {setClass}=value;
+
         return(
           <section className="about">
             <div className="container">
-              <Title title="About" color="grey"/>
+              <Title title="About" color={setClass?"#fefefe":"grey"}/>
               <div className="about-center">
                 <div className="about-logo">
                   <img src={AboutLogo} alt="logo"/>
                 </div>
 
-                <div className="about-texts">
-                  <div className="profile">
+                <div className={setClass?"about-texts dark-mode-white":"about-texts"}>
+                  <div className={setClass?"dark-mode-orange":"profile"}>
                     <h2>My Profile</h2>
 
                   </div>
-                  <div className="name">
+                  <div className={setClass?"dark-mode-orange":"profile"}>
                     <p><span>Name: </span>Kareem Draz</p>
                   </div>
-                  <div className="age">
+                  <div className={setClass?"dark-mode-orange":""}>
                     <p><span>Age: </span>22</p>
                   </div>
-                  <div className="address">
+                  <div className={setClass?"dark-mode-orange":""}>
                     <p><span>Address: </span>Toronto, Canada</p>
                   </div>
-                  <div className="email">
-                    <p><span>Email: </span><a href="mailto:draz@ualberta.ca">draz@ualberta.ca</a></p>
+                  <div className={setClass?"dark-mode-orange":""}>
+                    <p><span>Email: </span><a href="mailto:draz@ualberta.ca" className={setClass?"dark-mode-mail":""}>draz@ualberta.ca</a></p>
                   </div>
                   <div className="phone">
-                    <p><span>Phone: </span>+1 587-974-8805</p>
+                    <p><span className={setClass?"dark-mode-orange":""}>Phone: </span>+1 587-974-8805</p>
                   </div>
                   <div className="website">
-                    <p><span>Website: </span>www.KareemDraz.com</p>
+                    <p><span className={setClass?"dark-mode-orange":""}>Website: </span>www.KareemDraz.com</p>
                   </div>
-                  <div className="about-media">
+                  <div className={setClass?"about-media dark-mode-orangeBack":"about-media"}>
                     <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
 
                     <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
@@ -51,10 +54,10 @@ export default function About() {
                 </div>
               </div>
 
-            <div className="generally">
-              <span> 
+            <div className={setClass?"dark-mode-lightWhite generally":"generally"}>
+              <span className={setClass?"dark-mode-orange":""}> 
                 Generally, 
-              </span><p>I graduated from the University of Alberta with a Bachelor's degree in Petroleum Engineering. I am an aspiring Data Scientist in the Oil and Gas field. I am also aFull Stack Web Developer. Below you can see my skills and projects.</p>
+              </span><p className={setClass?"dark-mode-orange":""}>I graduated from the University of Alberta with a Bachelor's degree in Petroleum Engineering. I am an aspiring Data Scientist in the Oil and Gas field. I am also aFull Stack Web Developer. Below you can see my skills and projects.</p>
               <div className="certificates">
                 <h4>My Certificates: </h4>
                 <p>Bachelors Degree in Petroleum Engineering</p>
