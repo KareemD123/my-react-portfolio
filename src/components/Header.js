@@ -1,7 +1,9 @@
 import React from 'react'
 import headerImg from '../images/pythonfordatascience.jpg';
 import {ProductConsumer} from '../Context/Context';
-import Bounce from 'react-reveal/Bounce'
+import Bounce from 'react-reveal/Bounce';
+import ReactWordcloud from 'react-wordcloud';
+import words from "./Words";
 
 export default function Header() {
   return (
@@ -15,11 +17,14 @@ export default function Header() {
 
         return(
           <section className="header">
-            <img src={headerImg} alt="header"/>
+            {/* <img src={headerImg} alt="header"/> */}
+            <div style={{ width:"100%", height: "100%"}}>
+              <ReactWordcloud words={words} />
+            </div>
             <div className="inside-container">
               <div className="texts">
 
-                <Bounce right delay={500} duration={2000} cascade>
+                {/* <Bounce right delay={500} duration={2000} cascade>
                 <h1>
                 I'm Kareem!
                 </h1>
@@ -31,7 +36,7 @@ export default function Header() {
                 </Bounce>
                 <Bounce bottom delay={4000} duration={2000} cascade>
                 <a href="mailto:draz@ualberta.ca" className="contactBtn">Contact</a>
-                </Bounce>
+                </Bounce> */}
                 
                
                 
