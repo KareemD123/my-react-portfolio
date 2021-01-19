@@ -13,6 +13,16 @@ export default function About() {
 
         return(
           <section className="about">
+
+                {/* <h1>  
+                Welcome,
+                </h1>
+                <h2>
+                Petroleum Engineer, Full-Stack Web Developer, and aspiring Data Scientist
+                </h2>
+                <a href="mailto:draz@ualberta.ca" className="contactBtn">Contact</a> */}
+
+
             <div className="container">
               <Title title="About" color={setClass?"#fefefe":"grey"}/>
               <div className="about-center">
@@ -57,7 +67,7 @@ export default function About() {
                 About me, 
               </span><p className={setClass?"dark-mode-orange":""}>I graduated from the University of Alberta with a Bachelor's degree in Petroleum Engineering. While working on my skills, I developed a passion for programming. I am an aspiring Web Developer and Data Scientist in the Oil and Gas field. Check out some of my projects and skills below!</p>
               <div className="certificates">
-                <h4>My Certificates: </h4>
+                <h4>My Qualifications: </h4>
                 <p>Bachelors Degree in Petroleum Engineering</p>
                 <p>General Assembly Software Engineering Immersive</p>
                 <p>Coursera Applied Data Science (In progress)</p>

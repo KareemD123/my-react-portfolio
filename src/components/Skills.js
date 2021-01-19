@@ -18,7 +18,7 @@ export default function Skills() {
               </div>
               <div className="skills-center">
                 <div className="skills-web">
-                <h4 className={setClass?"dark-mode-orange":""}>Web Development Skills</h4>
+                <h4 className={setClass?"dark-mode-orange":""}>Web Development & Software</h4>
                 {value.devSkills.map(devskills=>{
                   return(
                     <li className={setClass?"dark-mode-lightWhite":""}>
@@ -29,7 +29,7 @@ export default function Skills() {
                 </div>
 
                 <div className="skills-petroleum">
-                <h4 className={setClass?"dark-mode-orange":""}>Petroleum Skills</h4>
+                <h4 className={setClass?"dark-mode-orange":""}>Petroleum Engineering</h4>
                 {value.petroleumSkills.map(skills=>{
                   return(
                     <li className={setClass?"dark-mode-lightWhite":""}>
@@ -40,7 +40,7 @@ export default function Skills() {
                 </div>
 
                 <div className="skills-datascience">
-                <h4 className={setClass?"dark-mode-orange":""}>Data Science Skills</h4>
+                <h4 className={setClass?"dark-mode-orange":""}>Data Science</h4>
                 {value.datascienceSkills.map(skills=>{
                   return(
                     <li className={setClass?"dark-mode-lightWhite":""}>

@@ -1,9 +1,12 @@
 import React from 'react'
 import headerImg from '../images/pythonfordatascience.jpg';
 import {ProductConsumer} from '../Context/Context';
-import Bounce from 'react-reveal/Bounce';
+// import Bounce from 'react-reveal/Bounce';
 import ReactWordcloud from 'react-wordcloud';
 import words from "./Words";
+
+// import "tippy.js/dist/tippy.css";
+// import "tippy.js/animations/scale.css";
 
 export default function Header() {
   return (
@@ -18,7 +21,13 @@ export default function Header() {
         return(
           <section className="header">
             {/* <img src={headerImg} alt="header"/> */}
-            <div style={{ width:"100%", height: "100%"}}>
+            <div className="wordcloud" style={{ width:"50%", height: "500px"}}>
+              <ReactWordcloud words={words} />
+            </div>
+            <div className="wordcloudtwo" style={{ width:"50%", height: "500px"}}>
+              <ReactWordcloud words={words} />
+            </div>
+            <div className="wordcloudthree" style={{ width:"50%", height: "500px"}}>
               <ReactWordcloud words={words} />
             </div>
             <div className="inside-container">
@@ -36,7 +45,16 @@ export default function Header() {
                 </Bounce>
                 <Bounce bottom delay={4000} duration={2000} cascade>
                 <a href="mailto:draz@ualberta.ca" className="contactBtn">Contact</a>
-                </Bounce> */}
+                </Bounce>
+                 */}
+{/*                 
+                <h1>
+                I'm Kareem!
+                </h1>
+                <h2>
+                Petroleum Engineer, Full-Stack Web Developer, and aspiring Data Scientist
+                </h2>
+                <a href="mailto:draz@ualberta.ca" className="contactBtn">Contact</a> */}
                 
                
                 

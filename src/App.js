@@ -26,6 +26,9 @@ function App() {
 
           <Navbar />
 
+
+
+
             <Element name="Home">
             <Route exact path ="/" component = {Header} />
             </Element>
