@@ -6,16 +6,22 @@ export default function Skills() {
   return (
     <ProductConsumer>
       {value=>{
+
+        const {setClass}=value;
+
         return(
+          <div className="skillsContainer">
           <div className="skills">
             <div className="container">
-              <Title title="Skills" color="grey"/>
+              <div className="skillsTitle">
+              <Title title="Skills" color={setClass?"#fefefe":"grey"}/>
+              </div>
               <div className="skills-center">
                 <div className="skills-web">
-                <h4>Web Development Skills</h4>
+                <h4 className={setClass?"dark-mode-orange":""}>Web Development Skills</h4>
                 {value.devSkills.map(devskills=>{
                   return(
-                    <li>
+                    <li className={setClass?"dark-mode-lightWhite":""}>
                       <h3>{devskills.title}</h3>
                     </li>
                   )
@@ -23,10 +29,10 @@ export default function Skills() {
                 </div>
 
                 <div className="skills-petroleum">
-                <h4>Petroleum Skills</h4>
+                <h4 className={setClass?"dark-mode-orange":""}>Petroleum Skills</h4>
                 {value.petroleumSkills.map(skills=>{
                   return(
-                    <li>
+                    <li className={setClass?"dark-mode-lightWhite":""}>
                       <h3>{skills.title}</h3>
                     </li>
                   )
@@ -34,10 +40,10 @@ export default function Skills() {
                 </div>
 
                 <div className="skills-datascience">
-                <h4>Data Science Skills</h4>
+                <h4 className={setClass?"dark-mode-orange":""}>Data Science Skills</h4>
                 {value.datascienceSkills.map(skills=>{
                   return(
-                    <li>
+                    <li className={setClass?"dark-mode-lightWhite":""}>
                       <h3>{skills.title}</h3>
                     </li>
                   )
@@ -47,9 +53,10 @@ export default function Skills() {
 
               </div>
             </div>
-          </div>
+          </div></div>
         )
       }}
     </ProductConsumer>
   )
+  
 }

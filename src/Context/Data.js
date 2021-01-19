@@ -46,41 +46,58 @@ export const Links=[
 export const devSkills=[
   {
     id:1,
-    title:"HTML5",
+    title:"Javascript ES6, HTML5, CSS 3.0",
     percent: 'ninety',
     number:'90%',
   },
   {
     id:2,
-    title:"HTML5",
+    title:"ReactJS, NodeJS & ExpressJS Framework",
     percent: 'ninety',
     number:'90%',
   },
   {
     id:3,
-    title:"HTML5",
+    title:"SQL & MongoDB/MongooseJS",
     percent: 'ninety',
     number:'90%',
   },
   {
     id:4,
-    title:"HTML5",
+    title:"Experienced in RESTful routing practices",
     percent: 'ninety',
     number:'90%',
   },
   {
     id:5,
-    title:"HTML5",
+    title:"Data Modelling and producing API's",
     percent: 'ninety',
     number:'90%',
   },
-
+  {
+    id:6,
+    title:"Python & Django Web Framework",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:7,
+    title:"Full Stack Applications, MERN",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:8,
+    title:"Hosting Web Applications using Heroku",
+    percent: 'ninety',
+    number:'90%',
+  },
 ]
 
 export const petroleumSkills=[
   {
     id:1,
-    title:"Heavy Oil Thermal Recovery Methods",
+    title:"Well Planning and Reservoir Estimation",
     percent: 'ninety',
     number:'90%',
   },
@@ -91,8 +108,38 @@ export const petroleumSkills=[
     number:'90%',
   },
   {
-    id:1,
+    id:3,
     title:"PIPESIM",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:4,
+    title:"Wellflo",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:5,
+    title:"MatLab",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:6,
+    title:"Enhanced Oil Recovery, SAGD",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:7,
+    title:"Modelling in Petroleum Operations",
+    percent: 'ninety',
+    number:'90%',
+  },
+  {
+    id:8,
+    title:"Well Completion and Stimulation",
     percent: 'ninety',
     number:'90%',
   },
@@ -118,7 +165,7 @@ export const projects=[
   {
     id:1,
     extlink: 'https://github.com/KareemD123/wordify',
-    img:"../images/wordify.JPG",
+    img:"..\images\wordify.JPG",
     title:'Wordify - React Project',
     btnTitle: 'Wordify',
 
@@ -126,7 +173,7 @@ export const projects=[
   {
     id:2,
     extlink: 'https://github.com/KareemD123/wordify',
-    img:"../images/wordify.JPG",
+    img:"..\images\profilePhoto.png",
     title:'Wordify - React Project',
     btnTitle: 'Wordify',
 
@@ -134,7 +181,7 @@ export const projects=[
   {
     id:3,
     extlink: 'https://github.com/KareemD123/wordify',
-    img:"../images/wordify.JPG",
+    img:"..\images\wordify.JPG",
     title:'Wordify - React Project',
     btnTitle: 'Wordify',
 
@@ -142,7 +189,7 @@ export const projects=[
   {
     id:4,
     extlink: 'https://github.com/KareemD123/wordify',
-    img:"../images/wordify.JPG",
+    img:"..\images\wordify.JPG",
     title:'Wordify - React Project',
     btnTitle: 'Wordify',
 

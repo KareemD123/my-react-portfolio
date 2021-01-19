@@ -33,6 +33,7 @@ export default function Navbar() {
               <div className="logoBtn">
                 <Link to='/' onClick={handleClose}>
                 {/* <img src={logo} onClick={()=>scrollToElement("Home")} alt='image'/> */}
+                <h1 className="myName">Kareem Draz</h1>
                 </Link>
                 <div className='btn' onClick={handleSidebar} >
                   <div className='bar'></div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title';
-import AboutLogo from '../images/wordify.JPG';
+import AboutLogo from '../images/profilePhoto.png';
 import {ProductConsumer, ProductProvider} from '../Context/Context';
 
 
@@ -44,11 +44,9 @@ export default function About() {
                     <p><span className={setClass?"dark-mode-orange":""}>Website: </span>www.KareemDraz.com</p>
                   </div>
                   <div className={setClass?"about-media dark-mode-orangeBack":"about-media"}>
-                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
+                    <a href="https://github.com/KareemD123" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
 
-                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
-
-                    <a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                    <a href="http://www.linkedin.com/in/kareem-draz" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                   </div>
 
                 </div>
@@ -56,13 +54,13 @@ export default function About() {
 
             <div className={setClass?"dark-mode-lightWhite generally":"generally"}>
               <span className={setClass?"dark-mode-orange":""}> 
-                Generally, 
-              </span><p className={setClass?"dark-mode-orange":""}>I graduated from the University of Alberta with a Bachelor's degree in Petroleum Engineering. I am an aspiring Data Scientist in the Oil and Gas field. I am also aFull Stack Web Developer. Below you can see my skills and projects.</p>
+                About me, 
+              </span><p className={setClass?"dark-mode-orange":""}>I graduated from the University of Alberta with a Bachelor's degree in Petroleum Engineering. While working on my skills, I developed a passion for programming. I am an aspiring Web Developer and Data Scientist in the Oil and Gas field. Check out some of my projects and skills below!</p>
               <div className="certificates">
                 <h4>My Certificates: </h4>
                 <p>Bachelors Degree in Petroleum Engineering</p>
                 <p>General Assembly Software Engineering Immersive</p>
-                <p>Coursera Applied Data Sciences</p>
+                <p>Coursera Applied Data Science (In progress)</p>
               </div>
             </div>
 

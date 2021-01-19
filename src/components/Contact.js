@@ -22,14 +22,17 @@ export default function Contact() {
   return (
     <ProductConsumer>
       {value=>{
+
+        const {setClass}=value;
+
         return(
           <React.Fragment>
-            <Title title="Contact" color="gray" />
-            <div className="contact">
+            <Title title="Contact" color={setClass?"#fefefe":"gray"} />
+            <div className={setClass?"dark-mode-blue contact":"contact"}>
               <div className="container">
                 <div className="contact-center">
                   <div className="contact-links">
-                    <h3>Links</h3>
+                    <h3 className={setClass?"dark-mode-orange":""}>Links</h3>
                     <div className="links-items">
                       {value.links.map(item=>{
                         return(
@@ -41,10 +44,10 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="contact-media">
-                    <h3>Media</h3>
+                    <h3 className={setClass?"dark-mode-orange":""}>Media</h3>
                     <div className="media-items">
-                      <li><a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn</a></li>
-                      <li><a href="www.google.ca" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i> Github</a></li>
+                      <li><a href="http://www.linkedin.com/in/kareem-draz" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn</a></li>
+                      <li><a href="https://github.com/KareemD123" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i> Github</a></li>
                     </div>
                   </div>
                 </div>
